@@ -1,17 +1,55 @@
-# ss_maps
+# SS Maps
 
-A new Flutter project.
+A cross-platform mobile navigation application built with Flutter and geospatial location APIs, delivering real-time location tracking, place search, and route navigation across Android and iOS devices.
+
+## Key Features
+
+- Real-Time GPS Tracking: Live device geolocation and dynamic map camera updates.
+- Route and Turn-by-Turn Navigation: Optimal path calculation, distance/ETA estimation, and polyline route rendering between origin and destination.
+- Place Search and Geocoding: Fast address lookup, autocomplete suggestions, and coordinate-to-address reverse geocoding.
+- Cross-Platform Performance: Single Flutter codebase compiled natively for Android and iOS.
+
+## Tech Stack
+
+- Framework: Flutter (Dart)
+- Geospatial and Mapping: Location and Maps APIs, Geolocator, Geocoding
+- Platforms: Android, iOS, Web
+- Version Control: Git and GitHub
+
+## Project Structure
+
+SS_Map/
+├── android/          Android native configuration and Gradle files
+├── ios/              iOS native configuration and Runner
+├── lib/              Core Dart application code (UI, map logic, API services)
+├── test/             Widget and unit tests
+├── pubspec.yaml      Flutter dependencies and asset declarations
+└── README.md         Project documentation
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Prerequisites:
+- Flutter SDK (3.x or higher)
+- Android Studio / Xcode or VS Code with Flutter and Dart extensions
+- A valid Maps / Geospatial API key
 
-A few resources to get you started if this is your first Flutter project:
+Installation and Setup:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+1. Clone the repository:
+   git clone https://github.com/MR-SOLU/ss-maps.git
+   cd ss-maps
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Install dependencies:
+   flutter pub get
+
+3. Configure API Keys:
+   Create a .env file in the root directory (or configure android/local.properties) and add your geospatial API key:
+   MAPS_API_KEY=your_api_key_here
+
+4. Run the application:
+   flutter run
+
+## Author
+
+Solai Raj S
+GitHub: https://github.com/MR-SOLU
